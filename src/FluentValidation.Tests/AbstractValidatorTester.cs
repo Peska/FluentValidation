@@ -299,7 +299,8 @@ namespace FluentValidation.Tests {
 		}
 
 		[Fact]
-		public void WhenPreValidationReturnsTrue_ValidatorsGetHit_Validate() {
+		public void WhenPreValidationReturnsTrue_ValidatorsGetHit_Validate()
+		{
 			const string testProperty = "TestProperty";
 			const string testMessage = "Test Message";
 			testValidatorWithPreValidate.PreValidateMethod = (context, validationResult) => {
