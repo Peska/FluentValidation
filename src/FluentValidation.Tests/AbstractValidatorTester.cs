@@ -316,7 +316,8 @@ namespace FluentValidation.Tests {
 		}
 
 		[Fact]
-		public async Task WhenPreValidationReturnsTrue_ValidatorsGetHit_ValidateAsync() {
+		public async Task WhenPreValidationReturnsTrue_ValidatorsGetHit_ValidateAsync()
+		{
 			const string testProperty = "TestProperty";
 			const string testMessage = "Test Message";
 			testValidatorWithPreValidate.PreValidateMethod = (context, validationResult) => {
