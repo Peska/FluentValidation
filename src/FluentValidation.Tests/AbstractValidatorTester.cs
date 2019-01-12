@@ -332,7 +332,8 @@ namespace FluentValidation.Tests {
 			Assert.Contains(testMessage, result.Errors.Select(failure => failure.ErrorMessage));
 		}
 
-		public static TheoryData<ValidationResult> PreValidationReturnValueTheoryData = new TheoryData<ValidationResult> {
+		public static TheoryData<ValidationResult> PreValidationReturnValueTheoryData = new TheoryData<ValidationResult>
+		{
 			new ValidationResult(),
 			new ValidationResult(new List<ValidationFailure> {new ValidationFailure(nameof(Person.AnotherInt), $"{nameof(Person.AnotherInt)} Test Message")})
 		};
